@@ -1,8 +1,8 @@
-## Title: AddOn
+## Title: MyTemplate
 ## Author: manavortex
 ## Version: 0.1
 ## APIVersion: 100017 10018
-## SavedVariables: AddOn_Settings AddOn_Globals
+## SavedVariables: MyTemplate_Settings MyTemplate_Globals
 ## OptionalDependsOn: LibStub LibAddonMenu-2.0
 
 libs\LibStub\LibStub.lua
@@ -23,5 +23,5 @@ libs\LibAddonMenu-2.0\controls\texture.lua
 libs\LibAddonMenu-2.0\controls\iconpicker.lua
 libs\LibAddonMenu-2.0\controls\divider.lua
 
-AddOn.lua
-AddOnMenu.lua
+MyTemplate.lua
+MyTemplateMenu.lua
