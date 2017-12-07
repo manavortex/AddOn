@@ -1,6 +1,10 @@
 MyTemplate = {}
 
-local defaults = {}
+local defaults = {
+
+	"useGlobalSettings" = false,
+	
+}
 
 function MyTemplate_Initialize(eventCode, addonName)
 
@@ -8,11 +12,10 @@ function MyTemplate_Initialize(eventCode, addonName)
 
 	EVENT_MANAGER:UnregisterForEvent("MyTemplate", EVENT_ADD_ON_LOADED)
 	
-	AddOn.settings = ZO_SavedVars:New("MyTemplate_Settings", 0.2, nil, defaults)
-	AddOn.globalSettings = ZO_SavedVars:NewAccountWide("MyTemplate_Globals", 0.2, "MyTemplate_Global", defaults)
+	MyTemplate.settings = ZO_SavedVars:New("MyTemplate_Settings", 0.2, nil, defaults)
+	MyTemplate.globalSettings = ZO_SavedVars:NewAccountWide("MyTemplate_Globals", 0.2, "MyTemplate_Global", defaults)
 	
-	--DailyAutoShare.ActivateLocalDaily()
-	MyTemplate.CreateMenu(AddOn.settings, defaults)
+	MyTemplate.CreateMenu(MyTemplate.settings, defaults)
 
 end
 

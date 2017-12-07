@@ -3,7 +3,7 @@
 ## Version: 0.1
 ## APIVersion: 100017 10018
 ## SavedVariables: MyTemplate_Settings MyTemplate_Globals
-## OptionalDependsOn: LibStub LibAddonMenu-2.0
+## DependsOn: LibStub LibAddonMenu-2.0
 
 libs\LibStub\LibStub.lua
 
