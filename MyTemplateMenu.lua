@@ -40,7 +40,7 @@ function MyTemplate.CreateMenu(savedVars, defaults)
 		},
 		]]
 
-	},
+	}
 
 	LAM:RegisterOptionControls("MyTemplate_OptionsPanel", optionsData)
 
