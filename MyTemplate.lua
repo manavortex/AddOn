@@ -6,6 +6,10 @@ local defaults = {
 	
 }
 
+function MyTemplate_KeybindFunction()
+	-- do something
+end
+
 function MyTemplate_Initialize(eventCode, addonName)
 
 	if addonName ~="MyTemplate" then return end
@@ -19,4 +23,6 @@ function MyTemplate_Initialize(eventCode, addonName)
 
 end
 
+
+ZO_CreateStringId("SI_BINDING_NAME_MY_TEMPLATE_KEYBIND", "My Template Keybinding")
 EVENT_MANAGER:RegisterForEvent("MyTemplate", EVENT_ADD_ON_LOADED, MyTemplate_Initialize)
