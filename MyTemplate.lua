@@ -1,9 +1,13 @@
 MyTemplate = {}
 
-local defaults = {
+-- will be used inside LibAddonMenu, so you might want to se tthose
+MyTemplate.name     = "MyTemplate"
+MyTemplate.author   = "you"
+MyTemplate.version  = "1.0"
 
-	"useGlobalSettings" = false,
-	
+-- these are needed for the saved variables
+local defaults = {
+	"useGlobalSettings" = false,	
 }
 
 function MyTemplate_KeybindFunction()

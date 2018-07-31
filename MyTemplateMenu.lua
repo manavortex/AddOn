@@ -12,7 +12,7 @@ function MyTemplate.CreateMenu(savedVars, defaults)
 		version = MyTemplate.version,
 		registerForRefresh = true,
 		registerForDefaults = true,
-		slashCommand = "/MyTemplate",	
+		slashCommand = "/mytemplate", -- needs to be case insensitive, or it won't work	
 	}
 
 	LAM:RegisterAddonPanel("MyTemplate_OptionsPanel", panelData)
